@@ -7,9 +7,11 @@ RUN sed -i "s/UsePrivilegeSeparation.*/UsePrivilegeSeparation no/g" /etc/ssh/ssh
 	&& sed -i "s/UsePAM.*/UsePAM no/g" /etc/ssh/sshd_config \
 	&& sed -i "s/PermitRootLogin.*/PermitRootLogin yes/g" /etc/ssh/sshd_config
 
+ADD set_root_pw.sh /set_root_pw.sh
 ADD run.sh /run.sh
-RUN chmod +x /run.sh
+RUN chmod +x /*.sh
 
+ENV ROOT_PASS **RANDOM**
 
 EXPOSE 22
 CMD ["/run.sh"]
