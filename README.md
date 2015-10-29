@@ -1,2 +1,2 @@
 # alpinelinux
-Alpine Linux Docker Box with SSH support
+Alpine Linux Docker Image with SSH support
