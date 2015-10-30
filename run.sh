@@ -9,4 +9,5 @@ if [ ! -f /.root_pw_set ]; then
 fi
 
 /etc/init.d/sshd start
-/bin/ash
+echo waiting
+cat
