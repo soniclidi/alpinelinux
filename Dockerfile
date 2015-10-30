@@ -11,7 +11,7 @@ ADD set_root_pw.sh /set_root_pw.sh
 ADD run.sh /run.sh
 RUN chmod +x /*.sh
 
-ENV ROOT_PASS
+ENV ROOT_PASS **RANDOM**
 
 EXPOSE 22
 CMD ["/run.sh"]
