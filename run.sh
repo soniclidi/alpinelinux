@@ -9,3 +9,4 @@ if [ ! -f /.root_pw_set ]; then
 fi
 
 /etc/init.d/sshd start
+exec /bin/ash
