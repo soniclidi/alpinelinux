@@ -9,5 +9,4 @@ if [ ! -f /.root_pw_set ]; then
 fi
 
 /etc/init.d/sshd start
-echo waiting
-cat
+while true;do sleep 1;done
