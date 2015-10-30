@@ -14,4 +14,4 @@ RUN chmod +x /*.sh
 ENV ROOT_PASS **RANDOM**
 
 EXPOSE 22
-CMD run.sh
+CMD /run.sh
